@@ -1,0 +1,104 @@
+.contact-form-white {
+  input, textarea {
+    padding: 12px 17px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--default-border);
+    margin-bottom: 15px;
+    color: var(--black_default);
+    opacity: 0.8;
+  }
+  .input-small {
+    padding: 7px 17px;
+  }
+  .input-error {
+    border: 2px solid $danger;
+  }
+  .input-success {
+    border: 2px solid $success;
+  }
+  .form-select {
+    width: 100%;
+    margin-bottom: 15px;
+    option {
+      padding: 5px 10px;
+    }
+  }
+  .input-disabled {
+    border: 2px solid var(--default-border);
+    background-color: var(--default-border);
+    cursor: not-allowed;
+  }
+  textarea {
+    min-height: 200px;
+    resize: none;
+  }
+  button {
+    margin-top: 15px;
+  }
+}
+
+// Contact form type 1
+.contact-form-type-1 {
+  .faq-contact-form-wrapper {
+    .faq-contact-form {
+      input, textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: transparent;
+        padding: 15px 0;
+        color: $white;
+      }
+      .input-row {
+        @media(max-width: $md) {
+          flex-direction: column;
+        }
+      }
+      .first-div {
+        margin-right: 20px;
+        @media(max-width: $md) {
+          margin-right: 0;
+        }
+      }
+      .last-div {
+        margin-left: 20px;
+        @media(max-width: $md) {
+          margin-left: 0;
+        }
+      }
+      .form-div {
+        position: relative;
+        width: 100%;
+        margin-bottom: 40px;
+        max-height: 250px;
+        @media(max-width: $md) {
+          margin-bottom: 20px;
+        }
+      }
+      .form-div:after {
+        content: ' ';
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: $white;
+        bottom: 0;
+        transition: all .3s ease-in-out;
+        position: absolute;
+      }
+      .form-div-focus:after {
+        width: 100%;
+      }
+      ::placeholder {
+        color: rgba($white, 0.5);
+      }
+      textarea {
+        height: 250px;
+        resize: none;
+      }
+      button {
+        margin-top: 50px;
+      }
+    }
+  }
+}

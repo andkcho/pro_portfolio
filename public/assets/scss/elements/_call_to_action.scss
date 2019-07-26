@@ -1,0 +1,21 @@
+// Call to action type 1
+.call-to-action-type-1 {
+  .title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    @media(max-width: $sm){
+      font-size: 26px;
+    }
+  }
+  .message {
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @media(max-width: $sm){
+      margin-bottom: 20px;
+    }
+  }
+}

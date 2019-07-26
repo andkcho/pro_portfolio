@@ -1,0 +1,278 @@
+// Only background
+.simple-background {
+  height: 70vh;
+  @media(max-width: $md) {
+    height: 50vh;
+  }
+  @media(max-width: $sm) {
+    height: 400px;
+  }
+}
+
+// Background slider
+.simple-background-slider {
+  height: 800px;
+  @media(max-width: $md) {
+    height: 600px;
+  }
+  @media(max-width: $sm) {
+    height: 400px;
+  }
+  .swiper-container {
+    height: 100%;
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+// Blockquote section
+.blockquote-section-type-1 {
+  .blockquote-wrapper {
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    .row {
+      width: 100%;
+      .blockquote-col {
+        padding: 0;
+        blockquote {
+          box-shadow: 0 4px 8px var(--box-shadow-boxes);
+          width: 500px;
+          border-radius: 5px;
+          background-color: var(--primary-color);
+          padding: 80px 70px 70px 70px;
+          position: relative;
+          @media(max-width: $md) {
+            padding: 60px 50px 50px 50px;
+          }
+          @media(max-width: $sm) {
+            padding: 50px 40px 40px 40px;
+          }
+          h4 {
+            font-family: var(--primary-font);
+            color: $white;
+            font-weight: 400;
+            text-align: center;
+            font-size: 25px;
+            @media(max-width: $md) {
+              font-size: 20px;
+            }
+          }
+        }
+        blockquote:after {
+          content: "\f10d";
+          font-size: 64px;
+          color: $white;
+          position: absolute;
+          line-height: 1;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          @media(max-width: $md) {
+            font-size: 56px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Video section
+.video-section {
+  .video-wrapper {
+    padding: 150px 15px;
+    position: relative;
+    z-index: 100;
+    @media(max-width: 1440px) {
+      padding: 120px 15px;
+    }
+    @media(max-width: $xl) {
+      padding: 80px 15px;
+    }
+    @media(max-width: $md) {
+      padding: 70px 15px;
+    }
+    .title {
+      color: $white;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+      @media(max-width: $xl) {
+        margin-bottom: 5px;
+      }
+      @media(max-width: $lg) {
+        font-size: 38px;
+      }
+      @media(max-width: $md) {
+        font-size: 32px;
+      }
+      @media(max-width: $sm) {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    }
+    p {
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      color: $white;
+      margin-bottom: 10px;
+    }
+    .play {
+      width: 55px;
+      height: 55px;
+      border: 2px solid $white;
+      border-radius: 100%;
+      margin-top: 35px;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      @media(max-width: $xl) {
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+      }
+      @media(max-width: $md) {
+        width: 40px;
+        height: 40px;
+      }
+      i {
+        transition: all .2s ease-in-out;
+        font-size: 14px;
+        color: $white;
+        @media(max-width: $xl) {
+          font-size: 14px;
+        }
+        @media(max-width: $md) {
+          font-size: 12px;
+        }
+      }
+    }
+    .play:hover {
+      background-color: $white;
+      i {
+        color: var(--black_default);
+      }
+    }
+  }
+}
+
+// Newsletter section
+.newsletter-section {
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+  @media(max-width: $xl) {
+    padding: 70px 0;
+  }
+  .col {
+    justify-content: space-between;
+    @media(max-width: $xl) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .content-wrapper {
+      position: relative;
+      z-index: 100;
+      max-width: 520px;
+      h2 {
+        color: $white;
+        line-height: 1;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 38px;
+        @media(max-width: $xl) {
+          text-align: center;
+        }
+        @media(max-width: $lg) {
+          font-size: 30px;
+        }
+        @media(max-width: $md) {
+          font-size: 28px;
+        }
+      }
+      p {
+        color: $white;
+        font-weight: 300;
+        @media(max-width: $xl) {
+          text-align: center;
+        }
+      }
+    }
+    .newsletter-wrapper {
+      position: relative;
+      z-index: 100;
+      @media(max-width: $xl) {
+        margin-top: 40px;
+      }
+      @media(max-width: $md) {
+        width: 100%;
+      }
+      #form-newsletter {
+        input {
+          height: 50px;
+          padding: 0 20px;
+          color: $white;
+          background-color: rgba($black, 0.5);
+          width: 320px;
+          border-top-left-radius: 25px;
+          border-bottom-left-radius: 25px;
+          border: none;
+          @media(max-width: $md) {
+            width: 100%;
+          }
+        }
+        ::placeholder {
+          color: rgba($white, 0.7);
+        }
+        button {
+          position: relative;
+          border-top-right-radius: 25px;
+          border-bottom-right-radius: 25px;
+          border: none;
+          background-color: var(--primary-color);
+          padding: 0 25px;
+          color: $white;
+          cursor: pointer;
+          font-size: 13px;
+          font-weight: 500;
+          text-transform: uppercase;
+          transition: all .2s ease-in-out;
+          perspective: 100px;
+          overflow: hidden;
+          z-index: 2;
+          @media(max-width: $md) {
+            min-width: 100px;
+            padding: 0 15px;
+            font-size: 11px;
+          }
+          i {
+            margin-left: 5px;
+          }
+        }
+        button:hover:after {
+          border-radius: 0;
+          left: 0;
+        }
+        button:after {
+          content: ' ';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -100%;
+          border-radius: 100%;
+          transition: all .3s ease-in-out;
+          background-color: rgba(33, 33, 33, 0.1);
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

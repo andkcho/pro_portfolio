@@ -1,0 +1,118 @@
+// Accordion type 1
+.accordion-type-1 {
+  .accordion {
+    border: 1px solid var(--default-border);
+    transition: all .3s ease-in-out;
+    box-shadow: 0 5px 5px var(--box-shadow-accordions);
+    border-radius: 5px;
+    overflow: hidden;
+    .accordion-header {
+      color: var(--heading-color);
+      font-weight: 500;
+      padding: 12px 20px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      font-family: var(--secondary-font);
+      transition: all .1s ease-in-out;
+      @media(max-width: $xl) {
+        padding: 8px 17px;
+      }
+    }
+    .accordion-body {
+      padding: 20px;
+      display: none;
+      @media(max-width: $xl) {
+        padding: 17px;
+      }
+    }
+  }
+  .accordion:not(:last-child) {
+    margin-bottom: 20px;
+    @media(max-width: $xl) {
+      margin-bottom: 15px;
+    }
+  }
+  .active-accordion {
+    .accordion-header {
+      color: $white;
+      background-color: var(--primary-color);
+      span {
+        color: $white;
+        margin-right: 15px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+// Accordion type 2
+.accordion-type-2 {
+  .accordion {
+    transition: all .3s ease-in-out;
+    .accordion-header {
+      color: var(--heading-color);
+      font-weight: 600;
+      padding-bottom: 15px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      font-family: var(--secondary-font);
+      transition: all .3s ease-in-out;
+      border-bottom: 1px solid var(--default-border);
+      text-transform: uppercase;
+      font-size: 12px;
+      span {
+        color: var(--primary-color);
+        margin-right: 15px;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+    .accordion-body {
+      padding: 15px 0 5px 0;
+      display: none;
+    }
+  }
+  .active-accordion {
+    .accordion-header {
+      color: var(--primary-color);
+    }
+  }
+  .accordion:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+// Accordion type 3
+.accordion-type-3 {
+  .accordion {
+    transition: all .3s ease-in-out;
+    .accordion-header {
+      color: $white;
+      font-weight: 400;
+      padding-bottom: 15px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      font-family: var(--secondary-font);
+      transition: all .3s ease-in-out;
+      border-bottom: 1px solid var(--default-border);
+    }
+    .accordion-body {
+      padding: 20px 0 5px 0;
+      display: none;
+      p {
+        color: var(--primary-font-color);
+      }
+    }
+  }
+  .active-accordion {
+    .accordion-header {
+      color: var(--primary-color);
+    }
+  }
+  .accordion:not(:last-child) {
+    margin-bottom: 15px;
+    @media(max-width: $xl) {
+      margin-bottom: 10px;
+    }
+  }
+}

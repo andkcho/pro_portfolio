@@ -1,0 +1,130 @@
+/* scss variables */
+/* Points */
+$xs: 0px;
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
+$xl: 1199px;
+
+/* Points Min */
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+/* css-variables */
+:root {
+  /* Common */
+  // Primary color
+  --primary-color: #ee3158;
+  // Primary font
+  --primary-font: 'Montserrat';
+  // Secondary font
+  --secondary-font: 'Poppins';
+  /* Additional Colors */
+  // White section background color
+  --white-section: #fff;
+  // Gray section background color
+  --gray-section: #f8f8f8;
+  // Black section background color
+  --black-section: #222020;
+  // Light Gray section background color
+  --light-gray-section: #fcfcfc;
+  // Selection background color
+  --selection_background: #dcdcdc;
+  // Selection color
+  --selection_color: #232323;
+  // Toolbar background color (Optional)
+  --navbar_toolbar_background: #f8f8f8;
+  // Navbar background color
+  --navbar_background: #ffffff;
+  // Loader background color
+  --loader_background: #eee;
+  // Hamburger bars background color
+  --toggle_color: rgba(#232323, 0.8);
+  // Footer top background color
+  --footer-top: #1c1c1c;
+  // Footer text color
+  --footer-text-color: #6f6f6f;
+
+  /* Primary Sizes */
+  // Navbar default height
+  --navbar-height: 80px;
+  // Navbar small height
+  --navbar_small_height: 60px;
+  // Logo width
+  --logo-width: 160px;
+  // Hero-header default height
+  --hero-header_default_height: 100vh;
+  // Hero-header responsive height (768px)
+  --hero-header_responsive_height: 600px;
+  // Breadcrumbs height
+  --breadcrumbs-height: 600px;
+
+  /* Overlay rgba Colors */
+  // Default overlay
+  --default_overlay: rgba(44, 44, 44, 0.4);
+  // Color overlay
+  --color_overlay: rgba(35, 35, 70, 0.25);
+  // Dark overlay
+  --dark_overlay: rgba(20, 20, 20, 0.4);
+  // Black overlay
+  --black_overlay: rgba(33, 33, 33, 0.5);
+
+  /* Borders Colors */
+  // Default border
+  --default-border: rgba(#999999, 0.2);
+  // Card border
+  --card-border: rgba(#999999, 0.1);
+  // White border
+  --white-border: rgba(#ececec, 0.5);
+  // Thin border
+  --thin-border: rgba(#ececec, 0.09);
+  // Light border
+  --light-border: rgba(#ececec, 0.2);
+  // Button border
+  --button-border: rgba(#ececec, 0.4);
+
+  /* Fonts Colors */
+  // Primary Font
+  --primary-font-color: #545454;
+  // Gray Font
+  --gray-font-color: #dcdcdc;
+  // Gray Default Font
+  --gray-default-font: #7f7f7f;
+  // Light Font
+  --light-font-color: #f3f3f3;
+
+  /* Box Shadow Colors */
+  // Box shadow dark
+  --box-shadow-dark: rgba(21, 21, 21, 0.2);
+  // Box shadow medium
+  --box-shadow-medium: rgba(31, 31, 31, 0.1);
+  // Box shadow light
+  --box-shadow-light: rgba(31, 31, 31, 0.02);
+  // Box shadow navbar
+  --box-shadow-navbar: rgba(31, 31, 31, 0.06);
+  // Box shadow boxes
+  --box-shadow-boxes: rgba(31, 31, 31, 0.02);
+
+  /* Test Shadow Colors */
+  // Text shadow dark
+  --text-shadow-dark: rgba(31, 31, 31, 0.5);
+  // Text shadow medium
+  --text-shadow-medium: rgba(31, 31, 31, 0.2);
+  // Text shadow light
+  --text-shadow-light: rgba(31, 31, 31, 0.1);
+  // button shadow light
+  --button-shadow-light: rgba(11, 11, 11, 0.15);;
+
+  /* Functional Colors */
+  // Default black color
+  --black_default: #232323;
+  // Default text menu
+  --text_menu: #232323;
+  @media(max-width: $xl){
+    --logo-width: 140px;
+  }
+}
+
+/* ## ## ## ## ## ## ## ## ## ## */
